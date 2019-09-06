@@ -8,30 +8,59 @@ li {
 
 li a {
     display: block;
-    background: red;
-    padding: 10px;
+    background: #ffffff;
+    color: #777777;
+    padding: 5px;
+    text-decoration: none;
+    margin-top: 5px;
+    
+   
+    
+    
+}
+
+li a:hover:not(.active) {
+    background-color: whitesmoke
+}
+/* .active {
+    color: #4aaaa5; 
+    
+    The about a tag would have clas=active if you want to give it a rule
+
+} */
+
+.nav-links {
+    position: absolute;
+    left: 71%;
+    
+    
+    
 }
 
 .header {
-    background: whitesmoke;
+    background: #ffffff;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    position: absolute;
+    position: fixed;
     left: 0;
     right: 0;
     top: 0;
     height: 76px;
-    border-bottom: solid 1px gray;
-    background-color: #ffffff;
+    border-bottom: solid 1px gainsboro;
+    z-index: 1000;
+    min-width: 1000px;
+    width: 100%;
     
 }
 .my-name {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 12%;
     color: white;
     background-color: #4aaaa5;
     padding: 20px;
     margin: 0;
+    float: left;
+    
     
 }
 
@@ -44,12 +73,66 @@ li a {
 
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-image: url(../images/what-the-hex.png)
+    color: #777777;
+    background-image: url(../images/what-the-hex.png); 
+
+    
+}
+
+.contents {
+    width: 960px;
+    margin: 0 auto;
 }
 
 .bio {
-    background: whitesmoke;
+    background: #ffffff;
     width: 960px;
-    margin: auto;
-    padding-top: 200px;
+    margin: 0 auto;
+    position: absolute;
+    top: 120px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: gainsboro;
+    
+    
+}
+
+.p-bio {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    line-height: 2em;
+}
+
+.about-title {
+    color: #4aaaa5;
+    text-align: left;
+}
+
+#bio-image {
+    float: left;
+    padding-right: 15px;
+}
+
+/* about footer */
+
+.copyright{
+    text-align: center;
+    clear: both;
+    padding: 20px;
+    background-color: #666666;
+    color: rgb(165, 182, 182);
+    border-top: 5px solid #4aaaa5;
+    font-size: 10px;
+    display: block;
+    box-sizing: border-box;
+    width: 100vw;
+    
+}
+
+#about-footer {
+    bottom: 0;
+    position: absolute;
+    box-sizing: border-box;
+    width: 100vw;
 }
