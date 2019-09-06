@@ -75,7 +75,8 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #777777;
     background-image: url(../images/what-the-hex.png); 
-
+    display: flex;
+    flex-direction: column;
     
 }
 
@@ -126,13 +127,18 @@ body {
     font-size: 10px;
     display: block;
     box-sizing: border-box;
-    width: 100vw;
+    /* width: 100vw; */
+    /* flex-shrink: 0; */
     
 }
 
 #about-footer {
     bottom: 0;
     position: absolute;
-    box-sizing: border-box;
-    width: 100vw;
+    left: 0;
+    width: 100%;
+    /* width: 1240px; */
+    /* box-sizing: border-box; */
+    /* width: 100vw; */
+    /* flex-shrink: 0; */
 }
