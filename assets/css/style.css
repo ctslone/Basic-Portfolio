@@ -1,4 +1,5 @@
 /* ------------------------------Header and Nav Bar ----------------------------------*/
+
 html {
     height: 100%;
 }
@@ -82,8 +83,7 @@ body {
     margin-bottom: 100px;
     clear: both;
     
-    
-    
+
 }
 
 .contents {
@@ -154,14 +154,20 @@ body {
 /* ------------------------------------ Portfolio Page ------------------------------ */
 
 .top-row {
-    /* float: left; */
+    padding-top: 40px;
+    
+
 }
 
 .mid-row {
+    padding-top: 40px;
+    padding-top: 20px;
 
 }
 
 .bot-row {
+    padding-top: 40px;
+    padding-top: 20px;
 
 }
 
@@ -172,16 +178,80 @@ body {
 
 .rpg-pic {
     padding-left: 20px;
+
 }
 
-.trivia {
+.trivia-pic {
+    padding-right: 20px;
+    padding-top: 20px;
     
 }
 
-.widget {
+.widget-pic {
+    padding-left: 20px; 
+    padding-top: 20px;
     
 }
 
-.rock-paper-scissors {
-    
+.rock-pic {
+    padding-top: 20px;
+
 }
+
+
+
+
+
+/* positioning the text over image/div */
+
+
+
+.hangman-div {
+    float: left;
+}
+
+.rpg-div {
+    float: left;
+}
+
+.trivia-div {
+    float: left;
+}
+
+.widget-div {
+    float: left;
+}
+
+.hangman-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+  }
+  
+.hangman-caption {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    width: 100%;
+    margin-right: 20px;
+    
+  }
+
+.rpg-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+  }
+  
+.rpg-caption {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    width: 100%;
+    margin-left: 20px;
+    
+  }
