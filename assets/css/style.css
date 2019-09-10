@@ -24,9 +24,9 @@ li a:hover:not(.active) {
     background-color: whitesmoke;
 }
 
-.nav-links {
+.nav-links{
     position: absolute;
-    left: 71%;    
+    left: 67.5%;  
 }
 
 .header {
@@ -71,7 +71,7 @@ body {
 
 .bio {
     background: #ffffff;
-    width: 960px;
+    width: 918px;
     margin: 0 auto;
     position: absolute;
     top: 100px;
@@ -80,10 +80,7 @@ body {
     border-style: solid;
     border-width: 1px;
     border-color: gainsboro;
-    margin-bottom: 100px;
-    
-    
-    
+    margin-bottom: 85px;
 }
 
 .p-bio {
@@ -102,13 +99,18 @@ body {
     padding-right: 15px;
 }
 
+/* This clearfix does not appear to do antyhing for the problem of the footer covering the bio div. However, adding bottom margin to bio div fixes the problem...? Not sure why clearfix does not work 
+
 .clearfix::after {
     content: "";
-    display: block;
+    display: both;
     clear: both;
-}
+} */
 
-/* about footer */
+
+
+
+/* footer for all pages */
 
 .copyright{
     text-align: center;
@@ -119,12 +121,10 @@ body {
     border-top: 5px solid #4aaaa5;
     font-size: 10px;
     display: block;
-    box-sizing: border-box;
-   
-    
+    box-sizing: border-box;   
 }
 
-#about-footer {
+#all-footer {
     bottom: 0;
     position: fixed;
     left: 0;
@@ -132,10 +132,14 @@ body {
 }
 
 /* ------------------------------------ Portfolio Page ------------------------------ */
-
+.portfolio-title {
+    color: #4aaaa5;
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
 .portfolio {
     background: #ffffff;
-    width: 960px;
+    width: 918px;
     margin: 0 auto;
     position: absolute;
     top: 100px;
@@ -165,7 +169,6 @@ body {
     padding-top: 20px;
     margin-bottom: 40px;
     overflow: hidden;
-
 }
 
 .hangman-pic {
@@ -180,30 +183,26 @@ body {
 
 .trivia-pic {
     padding-right: 20px;
-    padding-top: 20px;
-    
+    padding-top: 20px;  
 }
 
 .widget-pic {
     padding-left: 20px; 
-    padding-top: 20px;
-    
+    padding-top: 20px;  
 }
 
 .rock-pic {
     padding-top: 20px;
-
 }
 
 a {
     text-decoration: none;
     color: white;
 }
+
 a:hover {
     color: #666666;
 }
-
-
 
 
 
@@ -240,8 +239,7 @@ a:hover {
     background-color: #4aaaa5;
     color: #ffffff;
     width: 100%;
-    margin-right: 20px;
-    
+    margin-right: 20px; 
   }
 
 .rpg-container {
@@ -258,7 +256,6 @@ a:hover {
     color: #ffffff;
     width: 100%;
     margin-left: 20px;
-    
   }
 
 .trivia-container {
@@ -275,7 +272,6 @@ a:hover {
     color: #ffffff;
     width: 100%;
     margin-left;
-    
   }
 
 .widget-container {
@@ -291,8 +287,7 @@ a:hover {
     background-color: #4aaaa5;
     color: #ffffff;
     width: 100%;
-    margin-left:20px;
-    
+    margin-left:20px; 
   }
 
 .rock-container {
@@ -308,15 +303,18 @@ a:hover {
     background-color: #4aaaa5;
     color: #ffffff;
     width: 100%;
-    margin-left:0 auto;
-    
+    margin-left:0 auto; 
   }
 
   /* -------------------------------- Contact Page ---------------------------------- */
-
+  .contact-title {
+    color: #4aaaa5;
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
   .contact {
     background: #ffffff;
-    width: 960px;
+    width: 918px;
     margin: 0 auto;
     position: absolute;
     top: 100px;
@@ -349,8 +347,7 @@ a:hover {
     margin-top: 10px;
     margin-bottom: 10px;
     padding-left: 5px;
-    font-size: 12px;
-    
+    font-size: 12px; 
   }
 
   #message {
@@ -363,7 +360,6 @@ a:hover {
     padding-left: 5px;
     padding-top: 5px;
     font-size: 12px;
-
   }
 
   #submit-button {
