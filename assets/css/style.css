@@ -374,7 +374,3 @@ a:hover {
   #submit-button:hover {
       background-image: linear-gradient(to right, #666666, #4aaaa5);
   }
-
-  #submit-button:focus {
-      outline: red
-  }
